@@ -1,19 +1,19 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getTodoStatus = void 0;
-const getTodoStatus = (todo) => {
-    const now = new Date();
-    const dueTime = todo.dueDate.getTime();
-    const currentTime = now.getTime();
-    const remainingHours = Math.floor((dueTime - currentTime) / (1000 * 60 * 60));
+var getTodoStatus = function (todo) {
+    var now = new Date();
+    var dueTime = todo.dueDate.getTime();
+    var currentTime = now.getTime();
+    var remainingHours = Math.floor((dueTime - currentTime) / (1000 * 60 * 60));
     if (todo.completed) {
-        return `【済】${todo.title}`;
+        return "\u3010\u6E08\u3011".concat(todo.title);
     }
     else if (remainingHours > 0) {
-        return `【未】${todo.title} (期限まで残り${remainingHours}時間)`;
+        return "\u3010\u672A\u3011".concat(todo.title, " (\u671F\u9650\u307E\u3067\u6B8B\u308A").concat(remainingHours, "\u6642\u9593)");
     }
     else {
-        return `【未】${todo.title} (期限を${Math.abs(remainingHours)}時間超過)`;
+        return "\u3010\u672A\u3011".concat(todo.title, " (\u671F\u9650\u3092").concat(Math.abs(remainingHours), "\u6642\u9593\u8D85\u904E)");
     }
 };
 exports.getTodoStatus = getTodoStatus;

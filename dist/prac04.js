@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const todo = {
+var todo = {
     name: "TypeScriptの勉強",
     priority: 1,
     isDone: false,
@@ -8,7 +8,7 @@ const todo = {
 };
 // Reactの状態管理に適した
 // todo とは参照は異なる updatedTodo を生成
-const updatedTodo = {
+var updatedTodo = {
     name: "COBOLの勉強をする", // 変更
     priority: 3, // 変更
     isDone: todo.isDone, // todo の値を引き継ぐ

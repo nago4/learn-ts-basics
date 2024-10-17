@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.deepEqual = void 0;
-const deepEqual = (todo1, todo2) => {
+var deepEqual = function (todo1, todo2) {
     if (todo1 === todo2) {
         return true;
     }

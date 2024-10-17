@@ -1,11 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 function greetAndCalculate(name, a, b) {
-    const sum = a + b;
-    return `Hello, ${name}! The sum of ${a} and ${b} is ${sum}.`;
+    var sum = a + b;
+    return "Hello, ".concat(name, "! The sum of ").concat(a, " and ").concat(b, " is ").concat(sum, ".");
 }
-const userName = "Alice";
-const x = 10;
-const y = 20;
-const result = greetAndCalculate(userName, x, y);
+var userName = "Alice";
+var x = 10;
+var y = 20;
+var result = greetAndCalculate(userName, x, y);
 console.log(result);

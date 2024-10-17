@@ -1,13 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const deepEqual_1 = require("./utils/deepEqual"); // 追加
-const todo1 = {
+var deepEqual_1 = require("./utils/deepEqual"); // 追加
+var todo1 = {
     name: "TypeScriptの勉強",
     priority: 1,
     isDone: false,
     deadline: new Date(2024, 9, 11, 9, 45),
 };
-const todo2 = {
+var todo2 = {
     name: "TypeScriptの勉強",
     priority: 1,
     isDone: false,

@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
-    "target": "es2016",
+    "target": "es5",
     "module": "commonjs",
-    "outDir": "./dist" /* 追加 */,
-    "rootDir": "./src" /* 追加 */,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
     "strict": true,
-    "skipLibCheck": true
-  } /* カンマをつけないとダメ!!! */,
-  "include": ["src/**/*"] /* 追加 */
+    "esModuleInterop": true,  // ここを追加
+    "skipLibCheck": true,  // 型定義ファイルのチェックをスキップ（任意）
+    "outDir": "./dist"
+  },
+  "include": [
+    "src/**/*.ts"
+  ]
 }

@@ -1,12 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const todo1 = {
+var todo1 = {
     name: "TypeScriptの勉強",
     priority: 1,
     isDone: false,
     deadline: new Date(2024, 9, 11, 9, 45),
 };
-const todo2 = {
+var todo2 = {
     name: "TypeScriptの勉強",
     priority: 1,
     isDone: false,
